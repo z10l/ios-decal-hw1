@@ -1,16 +1,13 @@
-# Homework 1: Intro to Swift and Xcode 
-#### Due: Wednesday, September 16
+# Homework 1: Intro to Swift and Xcode
 
+## Due Date
+Wednesday, September 16
 
-###Description
-This will be a light introductory homework assignment to get your fingers warmed up with Swift 2.0 and Xcode 7. We will be exploring this new environment by fixing some bugs in the debugging.playground file.
+## Description
+Homework 1 is a light warm-up for Swift 2 and Xcode 7. You will be working inside a Playground. Xcode Playgrounds are a great place to test out the effects of certain lines of code and to just play around without having to create entire new projects. They also give very useful information that can make debugging easy. Let the compiler be your guide. Be mindful of its suggestions, warnings, and errors.
 
-###Setting Up
-Fork this repository and open the debugging.playground file with Xcode 7. You will then be able to make changes locally, and make commits/pushes to your fork.
-Also, please refer to piazza if you are having trouble setting up Xcode 7. 
-
-###Notes
-Take a look at the compilers suggestions, error messages, and warning. The playground gives very useful information that can make debugging easy. It is also a great place to test out the effects of certain lines of code, without having to create new projects or files.
-
-###Submitting
-We will provide a google form for you to link your fork, with your submission. This will be done either during the beginning of the lecture as part of sign in, or we will post a google form on Piazza.
+## Instructions
+1. Fork the assignment's repository from (https://github.com/iosdecal).
+2. Clone your forked repository to your local machine (the URL should contain YOUR_USERNAME/ios-decal-..).
+3. Debug debugging.playground.
+4. Add, commit, and push your modified file(s) to your forked remote repository.
