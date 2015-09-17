@@ -11,22 +11,22 @@ import UIKit
 
 class Foo {
     
-    var wordA : String!
-    var wordB : String!
+    var wordA : String?
+    var wordB : String?
     
     init (words: [String?]) {
-        wordA = words[0]
-        wordB = words[1]
+        wordA = words[0]!
+        wordB = words[1]!
     }
     
-//: Because words[0] and words[1] are already optionals. The assigments for wordA and wordB can do the unwrapping themselves.
+//: Because words[0] and words[1] are optionals, we want to unwrap them first. They can be a String or nil after unwrapping and then we can store them into wordA and wordB which are optionals which can store either a String or nil.
     
 //: ## Q2: Variable Types and Function Types
 //: Why does the compiler dislike the for loop? Also, what should we return?
     
     class func arePalindromes(words: [String]) -> Bool! {
         let reversedWords = words.map() {String($0.characters.reverse())}
-        var numElements = words.count
+        let numElements = words.count
         
         for var i = 0; i < numElements; i++ {
             if words[i] != reversedWords[i] {
@@ -46,8 +46,8 @@ class Foo {
 //: Are we initializing the dictionary correctly?
     class func isAnagram(wordA: String, wordB: String) -> Bool? {
         var countLetters : [Character : Int] = [Character : Int]()
-        var lenA = wordA.characters.count
-        var lenB = wordB.characters.count
+        let lenA = wordA.characters.count
+        let lenB = wordB.characters.count
         
         if lenA != lenB {
             return false
